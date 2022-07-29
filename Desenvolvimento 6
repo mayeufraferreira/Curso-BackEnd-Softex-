@@ -1,0 +1,126 @@
+Algoritmo "vestibular"
+
+Var
+
+   nomeAluno, turmaAluno, alunoTurmaA, alunoTurmaB, alunoTurmaC, alunoTurmaD, melhorAlunoGeral: Caracter
+   notaAluno, maiorNotaTurmaA, maiorNotaTurmaB, maiorNotaTurmaC, maiorNotaTurmaD, maiorNotaGeral: Real
+   aprovadosTurmaA, aprovadosTurmaB, aprovadosTurmaC, aprovadosTurmaD, cont: Inteiro
+
+Inicio
+
+   maiorNotaTurmaA <- 0
+   aprovadosTurmaA <- 0
+   alunoTurmaA <- " "
+
+   maiorNotaTurmaB <- 0
+   aprovadosTurmaB <- 0
+   alunoTurmaB <- " "
+
+   maiorNotaTurmaC <- 0
+   aprovadosTurmaC <- 0
+   alunoTurmaC <- " "
+
+   maiorNotaTurmaD <- 0
+   aprovadosTurmaD <- 0
+   alunoTurmaD <- " "
+
+   maiorNotaGeral <- 0
+   melhorAlunoGeral <- " "
+   cont <- 0
+
+   Para (cont <- 0 ate cont <= 100 passo cont <- cont + 1) faca
+      Escreva ("Nome do(a) Aluno(a): ")
+      Leia (nomeAluno)
+      Escreva ("Nota do(a) Aluno(a): ")
+      Leia (notaAluno)
+      Escreva ("Turma do(a) Aluno(a): ")
+      Leia (turmaAluno)
+      Limpatela
+   Fimpara
+
+
+
+   Se (turmaAluno = "A") entao
+      Se (notaAluno >= 7) entao
+         aprovadosTurmaA <- aprovadosTurmaA + 1
+         Se (notaAluno >= maiorNotaTurmaA) entao
+            maiorNotaTurmaA <- notaAluno
+            alunoTurmaA <- nomeAluno
+         Fimse
+      Fimse
+   Fimse
+
+
+   Se (turmaAluno = "B") entao
+      Se (notaAluno >= 7) entao
+         aprovadosTurmaB <- aprovadosTurmaB + 1
+         Se (notaAluno >= maiorNotaTurmaB) entao
+            maiorNotaTurmaB <- notaAluno
+            alunoTurmaB <- nomeAluno
+         Fimse
+      Fimse
+   Fimse
+
+
+   Se (turmaAluno = "C") entao
+      Se (notaAluno >= 7) entao
+         aprovadosTurmaC <- aprovadosTurmaC + 1
+         Se (notaAluno >= maiorNotaTurmaC) entao
+            maiorNotaTurmaC <- notaAluno
+            alunoTurmaC <- nomeAluno
+         Fimse
+      Fimse
+   Fimse
+
+
+   Se (turmaAluno = "D") entao
+      Se (notaAluno >= 7) entao
+         aprovadosTurmaD <- aprovadosTurmaD + 1
+         Se (notaAluno >= maiorNotaTurmaD) entao
+            maiorNotaTurmaD <- notaAluno
+            alunoTurmaD <- nomeAluno
+         Fimse
+      Fimse
+   Fimse
+
+
+
+   Se (maiorNotaTurmaA > maiorNotaTurmaB e maiorNotaTurmaA > maiorNotaTurmaC e maiorNotaTurmaC > maiorNotaTurmaD) entao
+      maiorNotaGeral <- maiorNotaTurmaA
+   Fimse
+
+   Se (maiorNotaTurmaB > maiorNotaTurmaA e maiorNotaTurmaB > maiorNotaTurmaC e maiorNotaTurmaB > maiorNotaTurmaD) entao
+      maiorNotaGeral <- maiorNotaTurmaB
+   Fimse
+
+   Se (maiorNotaTurmaC > maiorNotaTurmaA e maiorNotaTurmaC > maiorNotaTurmaB e maiorNotaTurmaC > maiorNotaTurmaD) entao
+      maiorNotaGeral <- maiorNotaTurmaC
+   Fimse
+
+   Se (maiorNotaTurmaD > maiorNotaTurmaA e maiorNotaTurmaD > maiorNotaTurmaB e maiorNotaTurmaD > maiorNotaTurmaC) entao
+      maiorNotaGeral <- maiorNotaTurmaD
+   Fimse
+
+
+   Escreva ("APROVADOS POR TURMA: ")
+   EscrevaL ("Turma A: ", aprovadosTurmaA)
+   EscrevaL ("Turma B: ", aprovadosTurmaB)
+   EscrevaL ("Turma C: ", aprovadosTurmaC)
+   EscrevaL ("Turma D: ", aprovadosTurmaD)
+
+   Limpatela
+
+   Escreva ("MELHORES ALUNOS POR TURMA: ")
+   EscrevaL ("Turma A: ", alunoTurmaA,"com a nota:", maiorNotaTurmaA)
+   EscrevaL ("Turma B: ", alunoTurmaB,"com a nota:", maiorNotaTurmaB)
+   EscrevaL ("Turma C: ", alunoTurmaC,"com a nota:", maiorNotaTurmaC)
+   EscrevaL ("Turma D: ", alunoTurmaD,"com a nota:", maiorNotaTurmaD)
+
+   Limpatela
+
+   Escreva ("MELHOR DESEMPENHO GERAL: ")
+   EscrevaL ("Aluno: ", melhorAlunoGeral)
+   EscrevaL ("Nota: ", maiorNotaGeral)
+   EscrevaL ("Turma: ", turmaAluno)
+
+Fimalgoritmo
