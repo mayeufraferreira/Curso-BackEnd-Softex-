@@ -1,0 +1,35 @@
+Algoritmo"insertionSort"
+
+Var
+     variavelVetor: vetor [1..30] de inteiro
+     i, j, troca: inteiro
+
+Inicio
+
+Para i <- 1 ate 30 faca
+     Escreva ("Digite um número (apenas números ímpares): ")
+     Leia (variavelvetor[i])
+     Limpatela
+Fimpara
+
+       Para i de 2 ate 30 faca
+            troca <- variavelVetor[i]
+            j <- i-1
+            Enquanto troca < variavelVetor [j] faca
+                     variavelVetor [j+1] <- variavelVetor [j]
+                     j <- j-1
+                     Se j=0 entao
+                        Interrompa
+                     FimSe
+            Fimenquanto
+            variavelVetor [j+1] <- troca
+       Fimpara
+       
+
+       Para i de 1 ate 30 faca
+            Escreva (variavelVetor[i])
+       Fimpara
+
+
+Fimalgoritmo
+
