@@ -1,0 +1,40 @@
+Algoritmo "Cadastro"
+
+Var
+    nome, endereco, cidade, nomePai, nomeMae: Caracter
+    cpf, rg: Inteiro
+    peso, renda: Real
+
+Inicio
+       Escreva ("Digite seu nome: ")
+       Leia (nome)
+       Escreva ("Digite seu endereço: ")
+       Leia (endereco)
+       Escreva ("Digite sua cidade: ")
+       Leia (cidade)
+       Escreva ("Digite seu CPF: ")
+       Leia (cpf)
+       Escreva ("Digite seu RG: ")
+       Leia (rg)
+       Escreva ("Digite o nome do seu pai: ")
+       Leia (nomePai)
+       Escreva ("Digite o nome da sua mãe: ")
+       Leia (nomeMae)
+       Escreva ("Digite seu peso: ")
+       Leia (peso)
+       Escreva ("Digite sua renda bruta: ")
+       Leia (renda)
+       
+       Limpatela
+       
+       EscrevaL ("Nome: ",nome)
+       EscrevaL ("Endereço: ",endereco)
+       EscrevaL ("Cidade: ",cidade)
+       EscrevaL ("CPF:",cpf)
+       EscrevaL ("RG:",rg)
+       EscrevaL ("Pai: ",nomePai)
+       EscrevaL ("Mãe: ",nomeMae)
+       EscrevaL ("Peso:",peso, "kg")
+       EscrevaL ("Renda bruta: R$",renda)
+
+Fimalgoritmo
