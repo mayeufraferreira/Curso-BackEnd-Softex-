@@ -1,0 +1,31 @@
+Algoritmo "bubbleSort"
+
+Var
+   variavelVetor: vetor [1..10] de inteiro
+   i, j, troca: inteiro
+
+Inicio
+   Para i <- 1 ate 10 faca
+      Escreva ("Digite um número: ")
+      Leia (variavelVetor[i])
+
+      Para i <- 1 ate 9 faca
+         Para j <- 1 ate 10 faca
+            Se (variavelVetor [i] > variavelVetor [j]) entao
+               troca <- variavelVetor [i]
+               variavelVetor [i] <- variavelVetor [j]
+               variavelVetor [j] <- troca
+            Fimse
+         Fimpara
+      Fimpara
+   Fimpara
+
+   Limpatela
+   
+   EscrevaL ("Seus números em ordem: ")
+
+   Para i <- 1 ate 10 faca
+        Escreva (variavelVetor [i], " - ")
+   Fimpara
+
+Fimalgoritmo
