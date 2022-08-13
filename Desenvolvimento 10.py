@@ -25,7 +25,7 @@ class numComplexo:
         img = a*d + b*c
         return numComplexo(real,img)
 
-    def div(self,num):
+    def __truediv__(self,num):
         a = self.real
         b = self.img
         c = num.real
@@ -34,19 +34,19 @@ class numComplexo:
         img = (a*d + b*c) / (c**2 + d**2)
         return numComplexo(real,img)
 
-x = numComplexo(2, 4)
-y = numComplexo(5, 2)
+import random
+x = numComplexo(random.randint(1, 99), random.randint(1, 99))
+y = numComplexo(random.randint(1, 99), random.randint(1, 99))
 
-soma = x + y
-sub = x - y
-multi = x * y
+adicao = x + y
+subtracao = x - y
+multiplicacao = x * y
+divisao = x / y
+
 print("Número 1:",x)
 print("Número 2:",y)
-print("Soma:",soma)
-print("Subtração:",sub)
-print("Multiplicação:",multi)
-print("Divisão:",x.div(y))
-
-
-
-
+print()
+print("Soma:",adicao)
+print("Subtração:",subratacao)
+print("Multiplicação:",multiplicacao)
+print("Divisão:",divisao)
