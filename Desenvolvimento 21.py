@@ -60,28 +60,3 @@ class Video:
 
     def Play(self):
         print("Vídeo em reprodução")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
