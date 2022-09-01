@@ -1,6 +1,4 @@
 
-package com.mayara.excecoes;
-
 import javax.swing.JOptionPane;
 
 public class Excecoes {
