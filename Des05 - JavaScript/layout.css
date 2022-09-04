@@ -1,0 +1,97 @@
+body {
+    font: normal 18pt Georgia;
+    text-align: center;
+    background-color: rgb(247, 208, 130);
+    color: whitesmoke;
+    padding: 5px;
+}
+
+section {
+    align-items: center;
+    background-color: rgba(143, 192, 252, 0.857);
+    color: rgb(79, 77, 77);
+    height: 400px;
+    width: 450px;
+    right: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+}
+
+#somar {
+    background-color: rgba(249, 99, 99, 0.508);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    font: bold 20pt;
+    color: black;
+}
+
+#somar:hover {
+    background-color: rgba(244, 78, 78, 0.67);
+}
+
+#subtrair {
+    background-color: rgba(198, 247, 124, 0.861);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    font: bold 20pt;
+    color: black;
+}
+
+#subtrair:hover {
+    background-color: rgba(149, 200, 72, 0.95);
+}
+
+#multiplicar {
+    background-color: rgba(243, 243, 101, 0.765);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    font: bold 20pt;
+    color: black;
+}
+
+#multiplicar:hover {
+    background-color: rgba(213, 213, 62, 0.938);
+}
+
+#dividir {
+    background-color: darkgray;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    font: bold 20pt;
+    color: black;
+}
+
+#dividir:hover {
+    background-color: rgb(132, 128, 128);
+}
+
+#num1 {
+    background-color:rgba(50, 48, 48, 0.751);
+    border: none;
+    color: whitesmoke;
+    text-align: right;
+}
+
+#num2 {
+    background-color:rgba(50, 48, 48, 0.751);
+    border: none;
+    color: whitesmoke;
+    text-align: right;
+}
