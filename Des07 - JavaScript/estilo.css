@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(222, 184, 135, 0.467);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#calc {
+    position: absolute;
+    background-color: rgb(150, 185, 249);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#botao {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(240, 248, 248);
+    border: none;
+    font: bold;
+}
+
+#botao:hover {
+    background-color: rgba(228, 220, 220, 0.662);
+}
+
+#clean {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgba(242, 114, 114, 0.913);
+    border: none;
+    font: bold;
+}
+
+#clean:hover {
+    background-color: rgba(220, 71, 71, 0.878);
+}
+
+#ponto {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(244, 209, 121);
+    border: none;
+    font: bold;
+}
+
+#ponto:hover {
+    background-color: rgba(197, 157, 56, 0.852);
+}
+
+#op {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(214, 213, 213);
+    border: none;
+    font: bold;
+}
+
+#op:hover {
+    background-color: rgb(131, 127, 127);
+}
+
+#zero {
+    height: 50px;
+    width: 106px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(240, 248, 248);
+    border: none;
+    font: bold;
+}
+
+#zero:hover {
+    background-color: rgba(228, 220, 220, 0.662);
+}
+
+#res {
+    height: 106px;
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    background-color: rgb(182, 214, 134);
+    border: none;
+    font: bold;
+}
+
+#res:hover {
+    background-color: rgb(144, 174, 100);
+}
+
+#resultado {
+    width: 203px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    font: bold;
+    text-align: right;
+    background-color: rgb(43, 43, 43);
+    color: azure;
+    padding: 5px;
+}
