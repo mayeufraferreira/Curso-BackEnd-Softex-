@@ -6,7 +6,7 @@ function Banco (conta, saldo, tipo, agencia) {
     this.tipo = tipo;
     this.agencia = agencia;
 
-    this.buscarSaldo = function obterSaldo() {
+    this.buscarSaldo = function() {
         console.log("Saldo: R$ " + this.saldo);
     };
 
