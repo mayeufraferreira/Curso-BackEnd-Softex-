@@ -1,5 +1,3 @@
-const prompt = require('prompt-sync')();
-
 function Banco (conta, saldo, tipo, agencia) {
     this.conta = conta;
     this.saldo = saldo;
