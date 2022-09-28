@@ -1,7 +1,7 @@
 nome = input("Nome do(a) aluno(a): ")
 n1 = float(input ("Primeira nota: "))
 n2 = float(input ("Segunda nota: "))
-f = int (input("Número de faltas: "))
+f = int(input("Número de faltas: "))
 m = (n1+n2)/2
 
 
