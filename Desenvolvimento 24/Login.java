@@ -1,9 +1,6 @@
-
-
 package br.com.techcompany.login;
 
 import javax.swing.JOptionPane;
-
 
 public class Login {
 
