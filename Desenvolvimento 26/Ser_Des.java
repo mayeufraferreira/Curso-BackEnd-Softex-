@@ -3,7 +3,7 @@ import java.io.*;
 public class Ser_Des {
 
     public static void main (String[] args) throws IOException, ClassNotFoundException {
-        Produto produto = new Produto("Notebbok", 2265.5d);
+        Produto produto = new Produto("Notebook", 2265.5d);
         System.out.println(produto);
 
         //Serialização:
