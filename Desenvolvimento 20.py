@@ -10,7 +10,7 @@ df.loc[df["média"] <7 | df["faltas"] >5, "situação"] = "REPROVADO"
 df.to_csv("C:/Users/mayka/OneDrive/Documentos/alunos_situacao.csv")
 
 maiorNumFaltas = df["faltas"].max()
-print("O maior números de faltas é:",(maiorNumFaltas))
+print("O maior número de faltas é:",(maiorNumFaltas))
 
 mediaGeral = df["média"].mean()
 print("A média geral das notas é:",(mediaGeral))
