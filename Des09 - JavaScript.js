@@ -16,7 +16,7 @@ function Banco (conta, saldo, tipo, agencia) {
 
     this.saque = function(valor) {
         var subtracao = Number(this.saldo) - Number(valor);
-        this.saldo = subtracao; //o saldo recebe um valor novo que é o saldo anterior + o valor sacado
+        this.saldo = subtracao; //o saldo recebe um valor novo que é o saldo anterior - o valor sacado
         console.log("Saldo pós saque: R$ " + subtracao);
     };
 
