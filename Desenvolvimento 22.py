@@ -13,7 +13,7 @@ class Cliente:
             print()
             Cliente.incremento += 1
     
-    def Incrementar():
+    def NumClientes():
         print("Número de clientes:",Cliente.incremento)
 
 
@@ -26,4 +26,4 @@ c2.Cadastrar()
 c3 = Cliente("Cliente 3", "cliente3@gmail.com")
 c3.Cadastrar()
 
-Cliente.Incrementar()
+Cliente.NumClientes()
