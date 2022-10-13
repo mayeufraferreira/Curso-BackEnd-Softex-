@@ -10,11 +10,12 @@ class Cliente:
             print("Nome:",self.nome)
             print("Email:",self.email)
             print("Cadastro efetivado com sucesso!")
-            Incrementar()
-            
+            print()
+            Cliente.incremento += 1
+    
     def Incrementar():
-        Cliente.incremento += 1
-        
+        print("Número de clientes:",Cliente.incremento)
+
 
 c1 = Cliente("Cliente 1", "cliente1@gmail.com")
 c1.Cadastrar()
@@ -26,7 +27,3 @@ c3 = Cliente("Cliente 3", "cliente3@gmail.com")
 c3.Cadastrar()
 
 Cliente.Incrementar()
-
-c1.incremento()
-c2.incremento()
-c3.incremento()
